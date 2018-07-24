@@ -14,7 +14,12 @@ def gem():
 
 
         __slots__ += ((
+            'crystal_parser',           #   Boolean
+            'java_parser',              #   Boolean
+            'python_parser',            #   Boolean
+            'sql_parser',               #   Boolean
             'testing',                  #   Boolean
+            'tremolite_parser',         #   Boolean
         ))
 
 
@@ -22,7 +27,12 @@ def gem():
             if is_python_2:
                 t.context = none
 
-            t.testing = false
+            t.crystal_parser   = false
+            t.java_parser      = false
+            t.python_parser    = false
+            t.sql_parser       = false
+            t.testing          = false
+            t.tremolite_parser = false
 
 
     gem_global = Gem_Global()
